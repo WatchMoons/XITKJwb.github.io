@@ -1,0 +1,26 @@
+.footer {
+  margin-top: 20px;
+}
+.footer p {
+  border-top: 2px solid rgba(78, 76, 76, 0.637);
+  margin: 60px auto;
+  width: 400px;
+  text-align: center;
+}
+#jam {
+  width: 300px;
+  margin: 60px auto;
+  text-align: center;
+}
+@media only screen and (max-width: 600px) {
+  .footer {
+    margin: 0 auto;
+  }
+  #jam {
+    margin-top: 140px;
+  }
+  .footer p {
+    margin-top: 100px;
+    width: auto;
+  }
+}

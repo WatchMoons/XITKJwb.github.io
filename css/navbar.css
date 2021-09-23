@@ -1,0 +1,68 @@
+.navbar {
+  display: flex;
+  border-top-right-radius: 15px;
+  width: 100%;
+  transition: 20em;
+}
+
+nav .container {
+  display: flex;
+  margin: 20px auto;
+}
+h1 {
+  margin-right: 400px;
+  margin-top: -15px;
+}
+h1 img {
+  max-width: 80px;
+
+  border-radius: 50%;
+}
+.menu {
+  display: flex;
+  margin-top: 15px;
+  margin-right: 40px;
+}
+
+.menu ul {
+  display: flex;
+  margin-left: 20px;
+}
+
+.menu ul li {
+  list-style: none;
+  margin-right: 15px;
+}
+
+.menu ul li a {
+  padding: 7.5px 7.5px 7.5px 7.5px;
+  color: black;
+  text-decoration: none;
+}
+.menu button {
+  padding: 3px 30px 7px;
+  margin-top: -20px;
+  border-radius: 10px;
+  color: white;
+  background-color: rgb(0, 143, 0);
+}
+@media only screen and (max-width: 1000px) {
+  .menu ul li a {
+    font-size: 60%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .menu ul li a {
+    margin: auto -200px;
+  }
+  .navbar {
+  }
+  .menu ul li {
+    display: none;
+    margin: -20px;
+  }
+  h1 img {
+    max-width: 70px;
+    margin: 10px -120px;
+  }
+}

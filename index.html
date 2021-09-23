@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>XI TKJ Website</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="css/content.css" rel="stylesheet" />
+    <link href="css/footer.css" rel="stylesheet" />
+    <link href="css/scroll.css" rel="stylesheet" />
+    <link href="css/hub.css" rel="stylesheet" />
+    <link href="css/bg.css" rel="stylesheet" />
+    <link href="css/slide.css" rel="stylesheet" />
+    <link href="css/fixs.css" rel="stylesheet" />
+    <link href="css/navbar.css" rel="stylesheet" />
+  </head>
+  <body class="body">
+    <div class="box-logo">
+      <div class="container-box">
+        <img src="img/logo.png" />
+      </div>
+    </div>
+
+    <div class="container-body" id="scrolls" data-aos="fade-right">
+      <nav class="navbar" data-aos="fade-down" id="scrolls">
+        <div class="container">
+          <h1>
+            <a href="index.html"><img src="img/logo.png" /></a>
+          </h1>
+          <div class="menu">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="Contact.html">Contact</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Sign-In</a></li>
+              <li>
+                <button type="button" class="sing-in">Sign-UP</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="hub">
+          <input type="checkbox" onclick="myhub()" />
+          <img src="img/burgerIcon.png" />
+        </div>
+      </nav>
+      <div class="slider">
+        <div class="slides">
+          <input type="radio" name="radio-btn" id="radio1" />
+          <input type="radio" name="radio-btn" id="radio2" />
+          <input type="radio" name="radio-btn" id="radio3" />
+          <input type="radio" name="radio-btn" id="radio4" />
+
+          <div class="slide first">
+            <img src="img/3.jpg" alt="gambar" />
+          </div>
+          <div class="slide">
+            <img src="img/1.png" alt="gambar" />
+          </div>
+          <div class="slide">
+            <img src="img/2.jpg" alt="gambar" />
+          </div>
+          <div class="slide">
+            <img src="img/3.jpg" alt="gambar" />
+          </div>
+
+          <div class="navigation-autos">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+          </div>
+
+          <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="content-container">
+          <div class="content-img">
+            <img src="img/As.png" />
+          </div>
+          <div class="judul">
+            <h1>welcome To Our Class Website</h1>
+          </div>
+          <div class="content-1">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s
+            with the release of Letraset sheets containing Lorem Ipsum passages,
+            and more recently with desktop publishing software like Aldus
+            PageMaker including versions of Lorem Ipsum.
+          </div>
+        </div>
+      </div>
+
+      <!-- youtube -->
+      <div class="vedio">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/5O-8vr9MsXA"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <div class="icon">
+          <ul>
+            <li>
+              <a href="#"><img src="img/in.png" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/fb.png" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/tw.png" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/yt.png" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Comment -->
+      <div class="container-comment">
+        <button type="button">JOIN US</button>
+      </div>
+      <div id="jam">
+        <script language="JavaScript">
+          var tanggallengkap = new String();
+          var namahari = "Minggu Senin Selasa Rabu Kamis Jumat Sabtu";
+          namahari = namahari.split(" ");
+          var namabulan =
+            "Januari Februari Maret April Mei Juni Juli Agustus September Oktober November Desember";
+          namabulan = namabulan.split(" ");
+          var tgl = new Date();
+          var hari = tgl.getDay();
+          var tanggal = tgl.getDate();
+          var bulan = tgl.getMonth();
+          var tahun = tgl.getFullYear();
+          tanggallengkap =
+            namahari[hari] +
+            ", " +
+            tanggal +
+            " " +
+            namabulan[bulan] +
+            " " +
+            tahun;
+        </script>
+        <script language="JavaScript">
+          document.write(tanggallengkap);
+        </script>
+      </div>
+      <!-- footer --->
+      <div class="footer">
+        <p>2021-2022</p>
+      </div>
+    </div>
+    <div class="close-container" data-aos="fade-up">
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <img src="img/scroll.png" alt="scroll" />
+      </a>
+    </div>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("scrolls");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+    <script>
+      var counter = 1;
+      setInterval(function () {
+        document.getElementById("radio" + counter).checked = true;
+        counter++;
+        if (counter > 4) {
+          counter = 1;
+        }
+      }, 3500);
+    </script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.slim.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
